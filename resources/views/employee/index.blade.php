@@ -189,7 +189,7 @@
                         "className": "text-center",
                         render: function(data, type, row) {
                             let details =
-                                `${moment(data).locale('id').format('DD MMMM YYYY')} <br/> (${calculateAge(data)} Tahun)`
+                                `${data} <br/> (${calculateAge(data)} Tahun)`
                             return "<div class='text-wrap'>" + details + "</div>";
                         },
                     },

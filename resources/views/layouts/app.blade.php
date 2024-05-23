@@ -148,6 +148,18 @@
     <!-- Flatpicker -->
     <script src="{{ asset('assets/js/plugins/momentjs/moment.min.js') }}"></script>
     <script src="{{ asset('assets/js/plugins/momentjs/moment-with-locales.min.js') }}"></script>
+
+    <!-- Notifiy -->
+    <script src="{{ asset('assets/js/plugins/bootstrap-notify/bootstrap-notify.min.js') }}"></script>
+    @if (Session::has('message'))
+        <script>
+            One.helpers('jq-notify', {
+                type: 'success',
+                icon: 'fa fa-check me-1',
+                message: '{{ Session::get('message') }}'
+            });
+        </script>
+    @endif
     @stack('js')
 </body>
 

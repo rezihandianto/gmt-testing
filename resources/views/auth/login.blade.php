@@ -109,7 +109,8 @@
                                         Sign In
                                     </h1>
                                     <p class="fw-medium text-muted">
-                                        Welcome, please login your account.
+                                        Welcome, please login or <a href="{{ route('register') }}">sign up</a> for a new
+                                        account.
                                     </p>
                                 </div>
                                 <!-- END Header -->
@@ -143,13 +144,13 @@
                                                     </span>
                                                 @enderror
                                             </div>
-                                            <div class="d-flex justify-content-between align-items-center mb-4">
-                                                <div>
+                                            <div class="d-flex justify-content-end align-items-center mb-4">
+                                                {{-- <div>
                                                     <a class="text-muted fs-sm fw-medium d-block d-lg-inline-block mb-1"
                                                         href="#">
                                                         Forgot Password?
                                                     </a>
-                                                </div>
+                                                </div> --}}
                                                 <div>
                                                     <button type="submit" class="btn btn-lg btn-alt-primary">
                                                         <i class="fa fa-fw fa-sign-in-alt me-1 opacity-50"></i> Sign In
