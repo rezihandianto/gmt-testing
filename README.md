@@ -9,8 +9,8 @@
 
 ## Account Seeder
 
-email :superadmin@example.com
-password : superadmin
+-   Email : superadmin@example.com.
+-   Password : superadmin
 
 Dont forget to (php artisan storage:link)
 
